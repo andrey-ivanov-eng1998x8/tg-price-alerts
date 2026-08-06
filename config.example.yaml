@@ -1,0 +1,30 @@
+telegram:
+  bot_token: "123456789:AAExampleTokenHere"
+  chat_id: 987654321
+  # optional topic/thread id for supergroups
+  message_thread_id: null
+
+poll_interval_sec: 45
+db_path: "alerts.db"
+
+# minimum wait time in seconds before re-triggering the same rule
+default_cooldown_sec: 1800
+
+rules:
+  - symbol: "BTC"
+    source: "binance"
+    pair: "BTCUSDT"
+    target_above: 95000
+    target_below: 80000
+    cooldown_sec: 3600
+
+  - symbol: "SOL"
+    source: "coingecko"
+    coin_id: "solana"
+    pct_change_24h: 5.0
+
+  - symbol: "NVDA"
+    source: "yahoo"
+    ticker: "NVDA"
+    target_above: 140
+    pct_change_24h: 4.0
