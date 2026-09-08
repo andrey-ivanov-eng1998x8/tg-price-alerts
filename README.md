@@ -72,3 +72,5 @@ Rule conditions:
 ```bash
 pytest
 ```
+
+<!-- last-sync: 2026-09-08 -->
