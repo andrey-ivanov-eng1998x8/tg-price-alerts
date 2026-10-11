@@ -73,4 +73,4 @@ Rule conditions:
 pytest
 ```
 
-<!-- last-sync: 2026-10-10 -->
+<!-- last-sync: 2026-10-11 -->
